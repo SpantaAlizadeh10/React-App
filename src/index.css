@@ -1,13 +1,79 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #f1f5f8;
+  color: #222;
+}
+
+.bookList {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2;
+}
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem;
+  position: relative;
+  box-shadow: #222;
+}
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .bookList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.book h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: dimgray;
+  text-shadow: #222;
+  text-transform: capitalize;
+}
+
+button {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  border: none;
+}
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: aquamarine;
+  padding: 10px;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: -3rem;
+  text-transform: capitalize;
+  text-shadow: #222;
 }
